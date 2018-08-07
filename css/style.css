@@ -8,20 +8,28 @@ body {
 	display: block;
 	width: 100%;
 	text-align: center;
-	padding: 50px 0 0 0;
-	font-size: 35px;
+	padding: 5px 0 0 0;
+	font-size: 30px;
 	font-weight: 700;
 }
 
-#awair-sf {
-	position: absolute;
-	top: 50%;
+#awair-sf-1 {
+	top: 50px;
 	left: 50%;
+}
+
+#awair-sf-2 {
+	top: 400px;
+	left: 50%;
+}
+
+.floor {
+	position: absolute;
 	display: block;
 	width: 820px;
 	height: 320px;
 	border: 1px solid #000000;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%,0%);
 }
 
 .room {
@@ -311,6 +319,13 @@ body {
 	left: 95px;
 }
 
+/* downstairs */
+#awair-omni_1019 {
+	top: 30px;
+	left: 750px;
+}
+
+/* rgb colors */
 .grey {
 	box-shadow: 0px 0px 30px 15px rgba(128, 128, 128, 1),
 				0px 0px 50px 30px rgba(128, 128, 128, 0.5),
@@ -351,4 +366,39 @@ body {
 					0px 0px 50px 30px rgba(128, 128, 128, 0.1),
 					0px 0px 70px 45px rgba(128, 128, 128, 0.05);
 	}
+}
+
+/* tooltip */
+.tooltip {
+	
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
 }
