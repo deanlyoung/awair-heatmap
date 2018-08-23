@@ -8,28 +8,30 @@ body {
 	display: block;
 	width: 100%;
 	text-align: center;
-	padding: 5px 0 0 0;
+	padding-top: 10px;
 	font-size: 30px;
 	font-weight: 700;
 }
 
 #awair-sf-1 {
-	top: 50px;
-	left: 50%;
+	display: none;
 }
 
 #awair-sf-2 {
-	top: 400px;
+	top: 50%;
 	left: 50%;
 }
 
 .floor {
 	position: absolute;
 	display: block;
+	background-image: url('../img/awair-sf-floorplan-2.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
 	width: 820px;
-	height: 320px;
+	height: 353px;
 	border: 1px solid #000000;
-	transform: translate(-50%,0%);
+	transform: translate(-50%,-50%);
 }
 
 .room {
@@ -40,112 +42,112 @@ body {
 #eng {
 	width: 130px;
 	height: 159px;
-	border-top: 0px;
+	/*border-top: 0px;
 	border-right: 1px;
 	border-bottom: 1px;
 	border-left: 0px;
 	border-color: #000000;
-	border-style: solid;
+	border-style: solid;*/
 }
 
 #kitchen {
 	width: 240px;
 	height: 160px;
-	border-top: 0px;
+	/*border-top: 0px;
 	border-right: 0px;
 	border-bottom: 0px;
 	border-left: 0px;
 	border-color: #000000;
-	border-style: solid;
+	border-style: solid;*/
 }
 
 #hall {
 	width: 266px;
 	height: 159px;
-	border-top: 0px;
+	/*border-top: 0px;
 	border-right: 0px;
 	border-bottom: 1px;
 	border-left: 0px;
 	border-color: #000000;
-	border-style: solid;
+	border-style: solid;*/
 }
 
 #men {
 	width: 100px;
 	height: 100px;
-	border-top: 0px;
+	/*border-top: 0px;
 	border-right: 0px;
 	border-bottom: 1px;
 	border-left: 1px;
 	border-color: #000000;
-	border-style: solid;
+	border-style: solid;*/
 	margin: 0;
 }
 
 #women {
 	width: 110px;
 	height: 100px;
-	border-top: 0px;
+	/*border-top: 0px;
 	border-right: 0px;
 	border-bottom: 1px;
 	border-left: 1px;
 	border-color: #000000;
-	border-style: solid;
+	border-style: solid;*/
 }
 
 #stairs {
 	width: 52px;
 	height: 100px;
-	border-top: 0px;
+	/*border-top: 0px;
 	border-right: 1px;
 	border-bottom: 0px;
 	border-left: 1px;
 	border-color: #000000;
-	border-style: solid;
+	border-style: solid;*/
 }
 
 #lab {
 	width: 180px;
 	height: 160px;
-	border-top: 0px;
+	/*border-top: 0px;
 	border-right: 0px;
 	border-bottom: 0px;
 	border-left: 0px;
 	border-color: #000000;
-	border-style: solid;
+	border-style: solid;*/
 }
 
 #shine {
 	width: 130px;
 	height: 160px;
-	border-top: 0px;
+	/*border-top: 0px;
 	border-right: 1px;
 	border-bottom: 0px;
 	border-left: 0px;
 	border-color: #000000;
-	border-style: solid;
+	border-style: solid;*/
 }
 
 #work-area {
 	width: 508px;
 	height: 160px;
-	border-top: 0px;
+	/*border-top: 0px;
 	border-right: 0px;
 	border-bottom: 0px;
 	border-left: 0px;
 	border-color: #000000;
-	border-style: solid;
+	border-style: solid;*/
 }
 
 #fog {
 	width: 180px;
 	height: 160px;
-	border-top: 0px;
+	/*border-top: 0px;
 	border-right: 0px;
 	border-bottom: 0px;
 	border-left: 0px;
 	border-color: #000000;
-	border-style: solid;
+	border-style: solid;*/
 }
 
 .awair {
@@ -153,6 +155,11 @@ body {
 	position: relative;
 	background: #fff;
 	border: 1px solid #000000;
+}
+
+.r2 {
+	width: 10px;
+	height: 5px;
 }
 
 .omni {
@@ -203,126 +210,142 @@ body {
 */
 
 /* eng-omni */
-#awair-omni_1007 {
-	top: 143px;
-	left: 85px;
+#awair-omni_2215 {
+	top: 160px;
+	left: 125px;
 }
 
 /* eng-v1 */
 #awair_22924 {
-	top: 75px;
-	left: 95px;
+	top: 100px;
+	left: 145px;
 }
 
 /* eng-glow */
 #awair-glow_3490 {
-	top: 143px;
-	left: -20px;
+	top: 160px;
+	left: 0px;
 }
 
 /* kitchen-omni */
 #awair-omni_98 {
-	top: 55px;
-	left: 0px;
+	top: 85px;
+	left: 53px;
 }
 
 /* men-glow */
 #awair-glow_142 {
-	top: 0px;
-	left: 50px;
+	top: 15px;
+	left: 95px;
 }
 
 /* women-glow */
 #awair-glow_1405 {
-	top: 0px;
-	left: 50px;
+	top: 15px;
+	left: 80px;
 }
 
 /* hall-omni */
 #awair-omni_720 {
-	top: 45px;
-	left: -100px;
-}
-
-#lab-omni {
-	display: none !important;
-	top: 0px;
-	left: 0px;
+	top: 43px;
+	left: 135px;
 }
 
 /* lab-glow */
 #awair-glow_836 {
-	top: 0px;
-	left: 165px;
+	top: 1px;
+	left: 150px;
 }
 
 /* shine-omni */
 #awair-omni_732 {
-	top: 30px;
-	left: 0px;
+	top: 40px;
+	left: 5px;
 }
 
 /* shine-v1 */
 #awair_2054 {
-	top: 140px;
-	left: 100px;
+	top: 170px;
+	left: 120px;
+}
+
+/* shine-awair-r2 */
+#awair-r2_1205 {
+	top: 130px;
+	left: 120px;
+}
+
+/* shine-omni */
+#awair-omni_736 {
+	top: 155px;
+	left: 120px;
 }
 
 /* work-area-omni */
 /* marketing-team*/
 #awair-omni_1017 {
-	top: 144px;
-	left: 115px;
+	top: 173px;
+	left: 225px;
 }
 
 /* marketing-team */
 #awair_1309 {
-	top: 126px;
-	left: 135px;
+	top: 125px;
+	left: 230px;
 }
 
 /* product-team */
-/*#awair-omni_756 {
-	top: 144px;
-	left: 225px;
-}*/
+#awair-omni_378 {
+	top: 135px;
+	left: 350px;
+}
+
+#awair_18571 {
+	top: 130px;
+	left: 360px;
+}
 
 #awair_3957 {
-	top: 15px;
-	left: 270px;
+	top: 0px;
+	left: 320px;
 }
 
 #awair_671 {
-	top: 15px;
-	left: 280px;
+	top: 0px;
+	left: 330px;
 }
 
 #awair_1061 {
-	top: 15px;
-	left: 290px;
+	top: 0px;
+	left: 340px;
 }
 
 #awair-glow_676 {
-	top: 0px;
-	left: 375px;
+	top: 13px;
+	left: 425px;
 }
 
 /* fog-omni */
 #awair-omni_939 {
-	top: 144px;
-	left: 25px;
+	top: 30px;
+	left: 20px;
 }
 
 /* fog-v1 */
 #awair_563 {
-	top: 144px;
-	left: 95px;
+	top: 170px;
+	left: 115px;
 }
 
 /* downstairs */
 #awair-omni_1019 {
-	top: 30px;
-	left: 750px;
+	top: 173px;
+	left: 60px;
+}
+
+#awair-omni_1007 {
+	top: 0px;
+	left: 5px;
 }
 
 /* rgb colors */
