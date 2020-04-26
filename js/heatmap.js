@@ -29,6 +29,7 @@ function update_data() {
 	for (var i = 0; i < orgsCount; i++) {
 		var org = dats[i];
 		var orgToken = org.orgToken;
+		var orgId = org.orgId;
 		
 		var devices = org.devices;
 		var deviceCount = org.devices.length;
@@ -40,23 +41,25 @@ function update_data() {
 			var device_uuid = devType + '_' + devId;
 			
 			$.ajax({
-				url: 'https://afb-api.awair.is/v1/orgs/self/devices/' + devType + '/' + devId + '/air-data?type=raw&limit=1&desc=true',
+				url: 'https://developer-apis.awair.is/v1/orgs/' + orgId + '/devices/' + devType + '/' + devId + '/air-data/latest',
 				type: 'GET',
-				dataType: 'json',
 				async: false,
+				dataType: 'json',
 				success: function(json) {
-					var classes = document.getElementById(device_uuid);
-					
-					var data = json.data[0];
-					var score = data.score;
-					var timestamp = data.timestamp;
-					timestamp = Date.parse(timestamp);
-					var timenow = new Date();
-					timenow = Date.parse(timenow);
-					var timediff = Math.floor((timenow - timestamp) / 1000); // in seconds
-					console.log('uuid: ' + device_uuid + ' score: ' + score + ' timestamp: ' + timestamp + ' time now: ' + timenow + ' time diff: ' + timediff);
-					
 					if (device_uuid != null) {
+						console.log(device_uuid);
+						var classes = document.getElementById(device_uuid);
+						
+						var data = json.data[0];
+						var score = data.score;
+						var timestamp = data.timestamp;
+						timestamp = Date.parse(timestamp);
+						var timenow = new Date();
+						timenow = Date.parse(timenow);
+						var timediff = Math.floor((timenow - timestamp) / 1000); // in seconds
+						console.log('uuid: ' + device_uuid + ' score: ' + score + ' timestamp: ' + timestamp + ' time now: ' + timenow + ' time diff: ' + timediff);
+						
+						
 						if (timediff > 60) {
 							console.log('disconnected');
 							classes.classList.remove("green");

@@ -263,12 +263,6 @@ body {
 	left: 5px;
 }
 
-/* shine-v1 */
-#awair_2054 {
-	top: 170px;
-	left: 120px;
-}
-
 /* shine-awair-r2 */
 #awair-r2_1205 {
 	top: 130px;
@@ -282,10 +276,11 @@ body {
 }
 
 /* work-area-omni */
-/* marketing-team*/
-#awair-omni_1017 {
-	top: 173px;
-	left: 225px;
+
+/* cs-v1 */
+#awair_2054 {
+	top: 170px;
+	left: 120px;
 }
 
 /* marketing-team */
@@ -338,7 +333,7 @@ body {
 }
 
 /* downstairs */
-#awair-omni_1019 {
+#awair-omni_939 {
 	top: 173px;
 	left: 60px;
 }
